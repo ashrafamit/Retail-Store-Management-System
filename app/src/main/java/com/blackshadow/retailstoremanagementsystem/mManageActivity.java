@@ -79,7 +79,7 @@ public class mManageActivity extends AppCompatActivity {
         unblock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                refAccept.child(uid).child("user_type").setValue("0").addOnCompleteListener(new OnCompleteListener<Void>() {
+                refAccept.child(uid).child("user_type").setValue("2").addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
